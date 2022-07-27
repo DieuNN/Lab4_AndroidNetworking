@@ -9,60 +9,75 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <EditText
-            android:id="@+id/txtFirstName"
-            android:hint="First name"
+            android:id="@+id/txtId"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:hint="Id" />
+
+        <EditText
+            android:layout_marginTop="16dp"
+            android:id="@+id/txtFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First name" />
 
         <EditText
             android:id="@+id/txtLastName"
-            android:layout_marginTop="16dp"
-            android:hint="Last name"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Last name" />
 
         <EditText
             android:id="@+id/txtEmail"
-            android:layout_marginTop="16dp"
-            android:hint="Email"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Email" />
 
         <LinearLayout
-            android:layout_marginTop="16dp"
-            android:orientation="horizontal"
-            android:gravity="center"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btnPost"
-                android:text="Post"
-                android:layout_gravity="center"
+                android:id="@+id/btnUpdate"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Update" />
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Delete"
                 android:layout_height="wrap_content"/>
 
             <Button
                 android:id="@+id/btnGet"
-                android:text="Get"
-                android:layout_marginLeft="16dp"
-                android:layout_gravity="center"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:text="Get with ID" />
+
 
         </LinearLayout>
 
         <TextView
             android:id="@+id/txtResult"
-            android:text="Data here"
-            android:layout_marginTop="16dp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:text="Data here" />
 
     </LinearLayout>
 
